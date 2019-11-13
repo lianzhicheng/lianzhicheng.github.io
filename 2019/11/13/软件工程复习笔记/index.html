@@ -8,13 +8,13 @@
   <link rel="dns-prefetch" href="http://lianzhicheng.github.io">
   <title>软件工程复习笔记 | Andy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="传统软件工程 第一章 软件与软件工程 一. 软件的概念，特点，发展阶段 软件的概念  计算机系统组成部分 逻辑产品 计算机控制系统指挥中枢 信息转换 工具，在各大领域发挥作用 程序和描述程序及操作的文档，对相应数据进行加工的程序和描述程序及操作的文档       软件的特点  被开发或设计，而不是被制造 不会磨损 逐步走向基于构建的组装，但还是定制   发展阶段  没有系统的软件开发方法和管理机制">
+  <meta name="description" content="传统软件工程 第一章 软件与软件工程 一. 软件的概念，特点，发展阶段 二. 软件危机产生的原因，解决软件危机的方法 三. 软件工程的概念，软件工程的三要素 四. 软件生命周期阶段及其基本任务 五. 软件开发过程   第二章 软件项目管理 一. 软件项目管理的基本概念 二. 软件项目估算（代码行、功能点估算） 三. McCabe度量法、能完成环路复杂度的度量 四. 成本估算方法及其特点 五">
 <meta name="keywords" content="软件工程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="软件工程复习笔记">
 <meta property="og:url" content="http://lianzhicheng.github.io/2019/11/13/软件工程复习笔记/index.html">
 <meta property="og:site_name" content="Andy&#39;s Blog">
-<meta property="og:description" content="传统软件工程 第一章 软件与软件工程 一. 软件的概念，特点，发展阶段 软件的概念  计算机系统组成部分 逻辑产品 计算机控制系统指挥中枢 信息转换 工具，在各大领域发挥作用 程序和描述程序及操作的文档，对相应数据进行加工的程序和描述程序及操作的文档       软件的特点  被开发或设计，而不是被制造 不会磨损 逐步走向基于构建的组装，但还是定制   发展阶段  没有系统的软件开发方法和管理机制">
+<meta property="og:description" content="传统软件工程 第一章 软件与软件工程 一. 软件的概念，特点，发展阶段 二. 软件危机产生的原因，解决软件危机的方法 三. 软件工程的概念，软件工程的三要素 四. 软件生命周期阶段及其基本任务 五. 软件开发过程   第二章 软件项目管理 一. 软件项目管理的基本概念 二. 软件项目估算（代码行、功能点估算） 三. McCabe度量法、能完成环路复杂度的度量 四. 成本估算方法及其特点 五">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://lianzhicheng.github.io/2019/11/13/软件工程复习笔记/1.jpg">
 <meta property="og:image" content="http://lianzhicheng.github.io/2019/11/13/软件工程复习笔记/2.jpg">
@@ -55,10 +55,10 @@
 <meta property="og:image" content="http://lianzhicheng.github.io/2019/11/13/软件工程复习笔记/38.jpg">
 <meta property="og:image" content="http://lianzhicheng.github.io/2019/11/13/软件工程复习笔记/39.jpg">
 <meta property="og:image" content="http://lianzhicheng.github.io/2019/11/13/软件工程复习笔记/40.jpg">
-<meta property="og:updated_time" content="2019-11-13T07:17:18.303Z">
+<meta property="og:updated_time" content="2019-11-13T07:43:34.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="软件工程复习笔记">
-<meta name="twitter:description" content="传统软件工程 第一章 软件与软件工程 一. 软件的概念，特点，发展阶段 软件的概念  计算机系统组成部分 逻辑产品 计算机控制系统指挥中枢 信息转换 工具，在各大领域发挥作用 程序和描述程序及操作的文档，对相应数据进行加工的程序和描述程序及操作的文档       软件的特点  被开发或设计，而不是被制造 不会磨损 逐步走向基于构建的组装，但还是定制   发展阶段  没有系统的软件开发方法和管理机制">
+<meta name="twitter:description" content="传统软件工程 第一章 软件与软件工程 一. 软件的概念，特点，发展阶段 二. 软件危机产生的原因，解决软件危机的方法 三. 软件工程的概念，软件工程的三要素 四. 软件生命周期阶段及其基本任务 五. 软件开发过程   第二章 软件项目管理 一. 软件项目管理的基本概念 二. 软件项目估算（代码行、功能点估算） 三. McCabe度量法、能完成环路复杂度的度量 四. 成本估算方法及其特点 五">
 <meta name="twitter:image" content="http://lianzhicheng.github.io/2019/11/13/软件工程复习笔记/1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Andy&#39;s Blog" type="application/atom+xml">
@@ -193,7 +193,64 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="传统软件工程"><a href="#传统软件工程" class="headerlink" title="传统软件工程"></a>传统软件工程</h2><hr>
+        <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+<li><a href="#%E4%BC%A0%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B">传统软件工程</a><ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%BD%AF%E4%BB%B6%E4%B8%8E%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B">第一章 软件与软件工程</a><ul>
+<li><a href="#%E4%B8%80-%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%A6%82%E5%BF%B5%E7%89%B9%E7%82%B9%E5%8F%91%E5%B1%95%E9%98%B6%E6%AE%B5">一. 软件的概念，特点，发展阶段</a></li>
+<li><a href="#%E4%BA%8C-%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA%E4%BA%A7%E7%94%9F%E7%9A%84%E5%8E%9F%E5%9B%A0%E8%A7%A3%E5%86%B3%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA%E7%9A%84%E6%96%B9%E6%B3%95">二. 软件危机产生的原因，解决软件危机的方法</a></li>
+<li><a href="#%E4%B8%89-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9A%84%E4%B8%89%E8%A6%81%E7%B4%A0">三. 软件工程的概念，软件工程的三要素</a></li>
+<li><a href="#%E5%9B%9B-%E8%BD%AF%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%98%B6%E6%AE%B5%E5%8F%8A%E5%85%B6%E5%9F%BA%E6%9C%AC%E4%BB%BB%E5%8A%A1">四. 软件生命周期阶段及其基本任务</a></li>
+<li><a href="#%E4%BA%94-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B">五. 软件开发过程</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86">第二章 软件项目管理</a><ul>
+<li><a href="#%E4%B8%80-%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">一. 软件项目管理的基本概念</a></li>
+<li><a href="#%E4%BA%8C-%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E4%BC%B0%E7%AE%97%E4%BB%A3%E7%A0%81%E8%A1%8C%E5%8A%9F%E8%83%BD%E7%82%B9%E4%BC%B0%E7%AE%97">二. 软件项目估算（代码行、功能点估算）</a></li>
+<li><a href="#%E4%B8%89-mccabe%E5%BA%A6%E9%87%8F%E6%B3%95%E8%83%BD%E5%AE%8C%E6%88%90%E7%8E%AF%E8%B7%AF%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E5%BA%A6%E9%87%8F">三. McCabe度量法、能完成环路复杂度的度量</a></li>
+<li><a href="#%E5%9B%9B-%E6%88%90%E6%9C%AC%E4%BC%B0%E7%AE%97%E6%96%B9%E6%B3%95%E5%8F%8A%E5%85%B6%E7%89%B9%E7%82%B9">四. 成本估算方法及其特点</a></li>
+<li><a href="#%E4%BA%94-%E5%85%B3%E9%94%AE%E8%B7%AF%E5%BE%84%E6%B3%95">五. 关键路径法</a></li>
+<li><a href="#%E5%85%AD-cmm%E4%B8%8Ecmmi%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">六. CMM与CMMI的基本概念</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80">第三章 需求分析基础</a><ul>
+<li><a href="#%E4%B8%80-%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E5%86%85%E5%AE%B9">一. 软件需求内容</a></li>
+<li><a href="#%E4%BA%8C-%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%B8%B8%E7%94%A8%E6%8A%80%E6%9C%AF">二. 需求分析常用技术</a></li>
+<li><a href="#%E4%B8%89-%E7%BB%93%E6%9E%84%E5%8C%96%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95">三. 结构化分析方法</a></li>
+<li><a href="#%E5%9B%9B-%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BEdfd%E7%9A%84%E4%BD%9C%E7%94%A8%E8%83%BD%E7%94%A8%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E5%AE%8C%E6%88%90%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E8%83%BD%E7%BB%99%E5%87%BA%E7%B2%BE%E5%8C%96%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8">四. 数据流图（DFD）的作用，能用数据流图完成需求分析，能给出精化数据流图，数据字典</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80">第四章 软件设计基础</a><ul>
+<li><a href="#%E4%B8%80-%E8%AE%BE%E8%AE%A1%E9%98%B6%E6%AE%B5%E4%B8%BB%E8%A6%81%E4%BB%BB%E5%8A%A1">一. 设计阶段主要任务</a></li>
+<li><a href="#%E4%BA%8C-%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%87%86%E5%88%99%E6%8A%BD%E8%B1%A1%E4%BF%A1%E6%81%AF%E9%9A%90%E8%94%BD%E6%A8%A1%E5%9D%97%E5%8C%96%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E9%80%90%E6%AD%A5%E6%B1%82%E7%B2%BE%E7%AD%89">二. 软件设计准则（抽象，信息隐蔽，模块化，自顶向下逐步求精等）</a></li>
+<li><a href="#%E4%B8%89-%E9%AB%98%E5%86%85%E8%81%9A%E4%BD%8E%E8%80%A6%E5%90%88%E5%BA%A6%E7%9A%84%E5%90%AB%E4%B9%89">三. 高内聚低耦合度的含义</a></li>
+<li><a href="#%E5%9B%9B-%E7%86%9F%E6%82%89%E4%B8%AD%E5%BF%83%E5%8F%98%E6%8D%A2%E5%88%86%E6%9E%90%E5%92%8C%E4%BA%8B%E5%8A%A1%E5%88%86%E6%9E%90%E8%83%BD%E7%94%A8%E8%BF%99%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%E5%88%86%E6%9E%90%E5%92%8C%E6%9E%84%E5%BB%BA%E8%BD%AF%E4%BB%B6%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E5%9B%BE">四. 熟悉中心变换分析和事务分析，能用这两种方法分析和构建软件层次结构图</a></li>
+<li><a href="#%E4%BA%94-%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%9B%92%E5%9B%BEn-s%E5%9B%BE%E4%B8%8Epad%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E5%8C%96%E8%83%BD%E5%B0%86%E4%BC%AA%E7%A0%81%E6%88%96%E7%A8%8B%E5%BA%8F%E8%BD%AC%E5%8C%96%E4%B8%BA%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%9B%92%E5%9B%BEn-s%E5%9B%BE%E4%B8%8Epad%E5%9B%BE">五. 详细设计工具（程序流程图、盒图(N-S图)与PAD图之间的转化），能将伪码或程序转化为程序流程图、盒图(N-S图)与PAD图</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95">第八章 软件测试</a><ul>
+<li><a href="#%E4%B8%80-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E7%9B%AE%E7%9A%84%E5%92%8C%E5%8E%9F%E5%88%99">一. 软件测试的目的和原则</a></li>
+<li><a href="#%E4%BA%8C-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B">二. 软件测试流程</a></li>
+<li><a href="#%E4%B8%89-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92">三. 软件测试计划</a></li>
+<li><a href="#%E5%9B%9B-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95%E5%88%A9%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF%E8%BF%9B%E8%A1%8C%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B">四. 软件测试技术（白盒测试、黑盒测试,利用软件测试技术进行软件测试，设计测试用例）</a></li>
+<li><a href="#%E4%BA%94-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AD%96%E7%95%A5%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95%E7%A1%AE%E8%AE%A4%E6%B5%8B%E8%AF%95%E9%AA%8C%E6%94%B6%E6%B5%8B%E8%AF%95%E7%B3%BB%E7%BB%9F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">五. 软件测试策略（单元测试、集成测试、确认测试、验收测试、系统测试）的基本概念</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E8%BD%AF%E4%BB%B6%E7%BB%B4%E6%8A%A4">第十章 软件维护</a><ul>
+<li><a href="#%E4%B8%80-%E5%9B%9B%E7%A7%8D%E7%BB%B4%E6%8A%A4%E7%9A%84%E7%B1%BB%E5%9E%8B%E8%BD%AF%E4%BB%B6%E7%BB%B4%E6%8A%A4%E6%A6%82%E5%BF%B5%E8%BD%AF%E4%BB%B6%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7">一. 四种维护的类型软件维护概念、软件可维护性</a></li>
+<li><a href="#%E4%BA%8C-%E8%BD%AF%E4%BB%B6%E7%BB%B4%E6%8A%A4%E7%9A%84%E6%8A%80%E6%9C%AF%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D">二. 软件维护的技术有哪几种</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<a id="more"></a>
+
+<h2 id="传统软件工程"><a href="#传统软件工程" class="headerlink" title="传统软件工程"></a>传统软件工程</h2><hr>
 <h3 id="第一章-软件与软件工程"><a href="#第一章-软件与软件工程" class="headerlink" title="第一章 软件与软件工程"></a>第一章 软件与软件工程</h3><hr>
 <h4 id="一-软件的概念，特点，发展阶段"><a href="#一-软件的概念，特点，发展阶段" class="headerlink" title="一. 软件的概念，特点，发展阶段"></a>一. 软件的概念，特点，发展阶段</h4><ul>
 <li><p><strong>软件的概念</strong></p>
@@ -565,12 +622,15 @@
 <ul>
 <li><p>优点： 用软件代码行数估算软件规模简单易行  </p>
 </li>
-<li><p>缺点：代码行数的估算依赖于程序<em>设计语言</em>的功能和表达能力；</p>
-<pre><code>采用代码行估算方法会对*设计精巧*的软件项目产生不利的影响；
-
-      在软件项目开发前或开发*初期估算*它的代码行数十分困难；
-
-      代码行估算只适用于过程式程序设计语言，对*非过程式*的程序设计语言不太适用等等</code></pre></li>
+<li><p>缺点：</p>
+<pre><code>- 代码行数的估算依赖于程序*设计语言*的功能和表达能力</code></pre><ul>
+<li>采用代码行估算方法会对<em>设计精巧</em>的软件项目产生不利的影响；<ul>
+<li>在软件项目开发前或开发<em>初期估算</em>它的代码行数十分困难；</li>
+</ul>
+</li>
+<li>代码行估算只适用于过程式程序设计语言，对<em>非过程式</em>的程序设计语言不太适用等等</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -621,7 +681,8 @@
 </blockquote>
 </li>
 <li><p><strong>分解技术</strong></p>
-<pre><code>采用分而治之的策略进行软件项目估算，将项目分解为若干个主要的功能及相关的软件工程活动，通过逐步求精的方式进行成本及工作量估算 </code></pre></li>
+<p> 采用分而治之的策略进行软件项目估算，将项目分解为若干个主要的功能及相关的软件工程活动，通过逐步求精的方式进行成本及工作量估算</p>
+</li>
 <li><p><strong>经验估算模型</strong></p>
 <p>可用于补充分解技术</p>
 </li>
